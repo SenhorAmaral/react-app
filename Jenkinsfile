@@ -41,7 +41,7 @@ pipeline {
             }
             steps {
                     script {
-                        sh "docker pull SenhorAmaral/react-app:${env.BUILD_NUMBER}"
+                        sh "docker pull senhoramaral/react-app:${env.BUILD_NUMBER}"
                         try {
                             sh "docker stop react-app"
                             sh "docker rm react-app"
